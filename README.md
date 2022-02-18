@@ -69,6 +69,12 @@ public class QuestaoDoisService {
 ```java
 public class QuestaoTresService {
 
+    /**
+     * Verifica a quantidade de anagramas pode ser a partir de uma palavra
+     * @param palavra texto para calular a quantidade de anagramas
+     * @return Inteiro que representa a quantidade de anagramas podem ser criados a partir
+     * da palavra passada como parâmetro
+     */
     public Integer getQuantidadeAnagramas(String palavra) {
         Set<String> anagramas = new HashSet<>();
         for (int i = 0; i < palavra.length(); i++) {
