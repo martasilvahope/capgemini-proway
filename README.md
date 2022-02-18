@@ -1,9 +1,18 @@
 # Prcesso seletivo Capgemini 2022
 
-### Configuração do projeto
+### Tecnologias Utilizadas
 
 * [maven](https://maven.apache.org/)
 * [java 11](https://www.oracle.com/br/java/technologies/javase/jdk11-archive-downloads.html)
+
+### Instruções de como rodar a aplicação
+
+Executar os testes unitários que estão no pacote ``src/test/java``, comando ``mvn test``
+* ``com.capgemini.proway.service.QuestaoUmServiceTest``
+* ``com.capgemini.proway.service.QuestaoDoisServiceTest``
+* ``com.capgemini.proway.service.QuestaoTresServiceTest``
+
+![Alt text](doc/teste-cobertura.png?raw=true "Execução do teste de cobertura do código")
 
 ### Desafio
 
