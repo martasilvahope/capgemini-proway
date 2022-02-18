@@ -11,23 +11,17 @@ public class QuestaoTresService {
                 if (palavra.charAt(i) == palavra.charAt(j) && i != j && i < j) {
                     if (palavra.charAt(i) == palavra.charAt(i + 1)) {
                         String x = palavra.substring(i, i + 1);
-                        anagramas.add(ordenarPalavra(x));
+                        anagramas.add(x);
                     } else {
                         String y = palavra.substring(i, j);
                         String h = palavra.substring(i, i + 1);
-                        anagramas.add(ordenarPalavra(h));
-                        anagramas.add(ordenarPalavra(y));
+                        anagramas.add(h);
+                        anagramas.add(y);
                     }
                 }
             }
         }
         return anagramas.size();
-    }
-
-    private String ordenarPalavra(String palavra) {
-        char[] letras = palavra.toCharArray();
-        Arrays.sort(letras);
-        return new String(letras);
     }
 
 }

@@ -16,11 +16,11 @@ class QuestaoTresServiceTest {
     }
 
 
-    @DisplayName("Deve retornar 3 quando informada a palavra ovo")
+    @DisplayName("Deve retornar 3 quando informada a palavra ifailuhkqq")
     @Test
-    void getQuantidadeAnagramas() {
-        Integer qtd = service.getQuantidadeAnagramas("ovo");
-        assertEquals(2, qtd);
+    void getQuantidadeAnagramasIfailuhkqq() {
+        Integer qtd = service.getQuantidadeAnagramas("ifailuhkqq");
+        assertEquals(3, qtd);
     }
 
     @DisplayName("Deve retornar 2 quando informada a palavra ovo")
@@ -29,4 +29,12 @@ class QuestaoTresServiceTest {
         Integer qtd = service.getQuantidadeAnagramas("ovo");
         assertEquals(2, qtd);
     }
+
+    @DisplayName("Deve retornar o quando informada apenas uma letra")
+    @Test
+    void getQuantidadeAnagramasApenasUmaLetra() {
+        Integer qtd = service.getQuantidadeAnagramas("a");
+        assertEquals(0, qtd);
+    }
+
 }
